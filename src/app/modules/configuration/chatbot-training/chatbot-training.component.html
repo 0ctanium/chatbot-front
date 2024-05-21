@@ -1,0 +1,19 @@
+<div class="chatbot-training">
+  <mat-accordion>
+    <mat-expansion-panel [expanded]="false">
+      <mat-expansion-panel-header collapsedHeight="28px" expandedHeight="28px">
+        <mat-panel-title>
+          <h3>Entrainement du chatbot</h3>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <button
+        mat-flat-button
+        color="accent"
+        data-cy="UpdateIconBtn"
+        (click)="train()"
+      >
+        Lancer un entraînement
+      </button>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

@@ -1,0 +1,36 @@
+@import "src/styles/variables";
+
+.banner {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+}
+
+.banner-info {
+  color: white;
+  background-color: $info-color;
+}
+
+.banner-success {
+  color: white;
+  background-color: $success-color;
+}
+
+.banner-warning {
+  color: white;
+  background-color: $warning-color;
+}
+
+.banner-error {
+  color: white;
+  background-color: $error-color;
+}

@@ -15,6 +15,7 @@ import { UserFormComponent } from './chatbot-users/user-form/user-form.component
 import { ChatbotPreviewComponent } from './chatbot-config/chatbot-preview/chatbot-preview.component';
 import { ChatbotEmbeddedPreviewComponent } from './chatbot-config/chatbot-embedded-preview/chatbot-embedded-preview.component';
 import { ChatbotTechComponent } from './chatbot-tech/chatbot-tech.component';
+import { ChatbotTrainingComponent } from './chatbot-training/chatbot-training.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ChatbotTechComponent } from './chatbot-tech/chatbot-tech.component';
     UserFormComponent,
     ChatbotPreviewComponent,
     ChatbotEmbeddedPreviewComponent,
-    ChatbotTechComponent
+    ChatbotTechComponent,
+    ChatbotTrainingComponent,
   ],
   imports: [
     CommonModule,
@@ -36,10 +38,8 @@ import { ChatbotTechComponent } from './chatbot-tech/chatbot-tech.component';
     ReactiveFormsModule,
     ColorPickerModule,
     ClipboardModule,
-    HighlightModule
+    HighlightModule,
   ],
-  providers: [
-    {provide: Window, useValue: window}
-  ]
+  providers: [{ provide: Window, useValue: window }],
 })
-export class ConfigurationModule { }
+export class ConfigurationModule {}

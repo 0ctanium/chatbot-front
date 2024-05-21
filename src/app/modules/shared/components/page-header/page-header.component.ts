@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AuthService } from '@core/services/auth.service';
 
 @Component({
@@ -6,14 +6,10 @@ import { AuthService } from '@core/services/auth.service';
   templateUrl: './page-header.component.html',
   styleUrls: ['./page-header.component.scss']
 })
-export class PageHeaderComponent implements OnInit {
+export class PageHeaderComponent {
 
   @Input() title: string;
 
-  constructor(public auth: AuthService) {
-  }
-
-  ngOnInit(): void {
-  }
+  constructor(public auth: AuthService) {}
 
 }

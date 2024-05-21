@@ -1,0 +1,8 @@
+.app-banners {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-banners > * {
+  margin-bottom: .75rem;
+}

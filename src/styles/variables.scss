@@ -16,6 +16,7 @@ $primary-color-100: map-get($chatbot-primary, 100);
 $primary-color-200: map-get($chatbot-primary, 200);
 $primary-color-300: map-get($chatbot-primary, 300);
 
+$info-color: map-get($chatbot-blue, 500);
 $warning-color: #ff7f00;
 $success-color: #76c882;
 $error-color: map-get($chatbot-warn, 500);
