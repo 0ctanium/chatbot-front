@@ -7,6 +7,7 @@
     "start:local": "ng serve --proxy-config proxy.local.conf.json",
     "start:dev": "ng serve --proxy-config proxy.dev.conf.json",
     "start:dev webchat": "ng serve --proxy-config proxy.dev.conf.json --project=webchat",
+    "start:local webchat": "ng serve --proxy-config proxy.local.conf.json --project=webchat",
     "start:test": "ng serve --proxy-config proxy.test.conf.json",
     "build": "ng build",
     "build:prod": "uglifyjs ./src/assets/scripts/embbed-chatbot.js -m -o ./src/assets/scripts/embbed-chatbot.min.js && ng build webchat --configuration production --base-href /chatbot/ --output-hashing=all && ng build --configuration production --base-href /backoffice/ --output-hashing=all",
